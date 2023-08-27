@@ -52,15 +52,18 @@ body {
 }
 
 .dropdown {
-    display: block;
-    background-color: white;
+    display: flex;
+    background-color: black;
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+    border-radius: 0.5em;
 }
 
 .dropdownli {
     display: flex;
     align-items: center;
     gap: 1rem;
-   padding: .5rem 1.5rem;
+   padding: .5rem 1rem;
 }
 
 .dropupli {

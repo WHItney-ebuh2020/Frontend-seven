@@ -1,5 +1,13 @@
-const dropdown = document.querySelectorAll('.dropdown');
+const dropdowns = document.querySelectorAll('.dropdown');
 
-dropdown.forEach(function(item){
-    item.addEventListener('click', function())
+//loop through the dropdowns
+dropdowns.forEach(dropdown => {
+    const dropdowns = dropdown.querySelector('.dropdown');
+    const links = dropdown.querySelector('.dropdownli');
+    const upper = dropdown.querySelector('.dropupli');
+
+    dropdowns.addEventListener('click', () => {
+
+        dropdowns.classList.toggle('dropdown-clicked');
+    });
 })
