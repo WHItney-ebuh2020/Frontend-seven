@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(36, 100%, 99%);
+    font-family: 'epilogue', sans-serif;
+}
+
+.bigcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+    gap: 100px;
+}
+
+.bigcontainertop {
+    display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin-right: 20px;
+}
+
+.bigcontainerul {
+    display: flex;
+    color: hsl(236, 13%, 42%);
+}
+
+.bigcontainerli {
+     display: flex;
+     align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.bigcontainertop .dropdown {
+    display: none;
+    flex-direction: column;
+    padding: .5rem 1.5rem;
+    overflow-y: hidden;
+}
+
+.dropdown {
+    display: block;
+    background-color: white;
+}
+
+.dropdownli {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   padding: .5rem 1.5rem;
+}
+
+.dropupli {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+}
+.bigcontainerlinks{
+    display: flex;
+    color: hsl(236, 13%, 42%);
+}
+
+.bigcontainerlink {
+    margin-left: 20px;
+}
+
+.regbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    color: hsl(236, 13%, 42%);
+    border-radius: 16px;
+    border: 2px solid hsl(236, 13%, 42%);
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+    transition: all 250ms ease-in-out;
+}
+
+.big {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex: 2;
+}
+
+.bigi {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.bigi h3 {
+    font-size: 100px;
+    font-weight: bolder;
+    word-spacing: 3px;
+}
+
+.bigi p {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(236, 13%, 42%);
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+.learnbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.learnbtn:hover {
+    background-color: white;
+    transition: 0.5ms;
+    color: black;
+    border: 1px solid hsl(236, 13%, 42%);
+}
+
+.bigright {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bigrightimg {
+    color: white;
+    display: flex;
+    gap: 30px;
+   padding: 30px;
+    width: 100%;
+}
