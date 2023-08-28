@@ -44,6 +44,10 @@ body {
     position: relative;
 }
 
+.arrowdown {
+    display: none;
+}
+
 .bigcontainertop .dropdown {
     display: none;
     flex-direction: column;

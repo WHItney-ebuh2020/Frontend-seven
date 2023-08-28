@@ -1,13 +1,16 @@
-const dropdowns = document.querySelectorAll('.dropdown');
+function myFunction() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
 
-//loop through the dropdowns
-dropdowns.forEach(dropdown => {
-    const dropdowns = dropdown.querySelector('.dropdown');
-    const links = dropdown.querySelector('.dropdownli');
-    const upper = dropdown.querySelector('.dropupli');
-
-    dropdowns.addEventListener('click', () => {
-
-        dropdowns.classList.toggle('dropdown-clicked');
-    });
-})
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
