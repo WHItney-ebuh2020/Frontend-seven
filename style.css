@@ -34,6 +34,9 @@ body {
 
 .bigcontainerul {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -10px;
     color: hsl(236, 13%, 42%);
 }
 
@@ -44,8 +47,16 @@ body {
     position: relative;
 }
 
-.arrowdown {
+li.bigcontainerli:hover .arrowdown {
+    transform: rotate(180deg);
+}
+
+.arrowup {
     display: none;
+}
+
+.arrowdown {
+    display: flex;
 }
 
 .bigcontainertop .dropdown {
@@ -61,13 +72,14 @@ body {
     color: hsl(0, 0%, 98%);
     cursor: pointer;
     border-radius: 0.5em;
+    position: absolute;
 }
 
 .dropdownli {
     display: flex;
     align-items: center;
     gap: 1rem;
-   padding: .5rem 1rem;
+    padding: .5rem 1rem;
 }
 
 .dropupli {
@@ -76,8 +88,10 @@ body {
     gap: 1rem;
     padding: .5rem 1.5rem;
 }
+
 .bigcontainerlinks{
     display: flex;
+    align-items: center;
     color: hsl(236, 13%, 42%);
 }
 
