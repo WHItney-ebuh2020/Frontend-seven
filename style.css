@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease !important;
 }
 
 li {
@@ -47,6 +48,10 @@ body {
     position: relative;
 }
 
+li.bigcontainerli:hover  {
+    cursor: pointer;
+}
+
 li.bigcontainerli:hover .arrowdown {
     transform: rotate(180deg);
 }
@@ -59,11 +64,16 @@ li.bigcontainerli:hover .arrowdown {
     display: flex;
 }
 
+.bigcontainertop .dropdown.open {
+    display: flex;
+}
+
 .bigcontainertop .dropdown {
     display: none;
     flex-direction: column;
     padding: .5rem 1.5rem;
     overflow-y: hidden;
+    top: 65px;
 }
 
 .dropdown {
